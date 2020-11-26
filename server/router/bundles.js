@@ -24,7 +24,6 @@ router.use('/service2.js', createProxyMiddleware({
   },
   changeOrigin: true,
 }));
-//console.log('in bundle router')
 
 router.use('/service3.js', createProxyMiddleware({
   target: service3.url,
