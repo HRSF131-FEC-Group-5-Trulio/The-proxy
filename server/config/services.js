@@ -39,12 +39,17 @@
     bundle: 'bundle.js',
   }
 */
+// api is the endpoint, url is the port, and bundle is the...bundle file?
+// url will become process.env.PORT || localhost
+
+// how do you set the API of the service...?
+
 
 module.exports = {
   service1: {
-    api: 'FIX_ME',
+    api: '',
     url: 'http://localhost:3001',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
   service2: {
     api: 'FIX_ME',
@@ -52,9 +57,9 @@ module.exports = {
     bundle: 'app.js',
   },
   service3: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3003',
-    bundle: 'app.js',
+    api: '/AdditionalListings/:id/',
+    url: 'http://localhost:3003/',
+    bundle: 'bundle.js',
   },
   service4: {
     api: 'FIX_ME',

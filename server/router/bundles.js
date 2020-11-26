@@ -6,6 +6,9 @@ const {
 
 const router = Router();
 
+// re-routing the paths from bundles/service1.js to app.js? bundling it to a file called app.js
+// sets the target as localhost...it's connected..
+
 router.use('/service1.js', createProxyMiddleware({
   target: service1.url,
   pathRewrite: {
@@ -21,6 +24,7 @@ router.use('/service2.js', createProxyMiddleware({
   },
   changeOrigin: true,
 }));
+//console.log('in bundle router')
 
 router.use('/service3.js', createProxyMiddleware({
   target: service3.url,
