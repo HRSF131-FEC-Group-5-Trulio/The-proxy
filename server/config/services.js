@@ -47,23 +47,23 @@
 
 module.exports = {
   service1: {
-    api: '',
-    url: 'http://localhost:3001',
+    api: '/PhotoCarousel/:id/',
+    url: 'http://34.239.132.127:3001',
     bundle: 'bundle.js',
   },
   service2: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3002',
-    bundle: 'app.js',
+    api: '/ScheduleTour/:id/',
+    url: 'http://18.236.233.111:3002',
+    bundle: 'bundle.js',
   },
   service3: {
     api: '/AdditionalListings/:id/',
-    url: 'http://localhost:3003/',
+    url: 'http://54.241.52.191:3003',
     bundle: 'bundle.js',
   },
   service4: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3004',
-    bundle: 'app.js',
+    api: '/MortgageCalculator/:listing_id/',
+    url: 'http://18.191.145.212:3004/:id',
+    bundle: 'bundle.js',
   },
 };

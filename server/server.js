@@ -20,7 +20,7 @@ app.use('/api', (req, res, next) => {
   console.log('in api!!!');
   next();
 },router.api);
-
+app.use(express.static(PUBLIC_DIR));
 app.use('/:id',express.static(PUBLIC_DIR));
 
 module.exports = app;
