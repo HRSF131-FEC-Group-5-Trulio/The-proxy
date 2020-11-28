@@ -9,10 +9,6 @@ const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 const app = express();
 
 app.use(morgan('dev'));
-
-
-// need to set up routes so that they can take in id first.
-
 // Handling asset requests for webpack bundles by passing off requests to the bundles router
 app.use('/bundles', router.bundles);
 // Handling AJAX requests to the API by passing off requests to the api router
