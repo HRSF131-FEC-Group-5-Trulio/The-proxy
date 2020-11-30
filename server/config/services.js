@@ -39,10 +39,6 @@
     bundle: 'bundle.js',
   }
 */
-// api is the endpoint, url is the port, and bundle is the...bundle file?
-// url will become process.env.PORT || localhost
-
-// how do you set the API of the service...?
 
 
 module.exports = {
